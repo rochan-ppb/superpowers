@@ -30,6 +30,23 @@ When multiple skills apply, process skills come first — they set the approach,
 - "Let's build X" → superpowers:brainstorming first, then implementation skills.
 - "Fix this bug" → superpowers:systematic-debugging first, then domain skills.
 
+## Token Efficiency
+
+Every message and every tool call costs tokens. Waste is not neutral—it burns context budget your human partner is paying for.
+
+**Be concise and objective.** No filler ("Great question!", "I'd be happy to..."), no restating the task back, no unnecessary summaries after tool calls, no preamble before tool calls.
+
+**Use tools efficiently.** Don't re-read files you already have in context. Don't repeat a search you already ran. Batch independent reads/searches in parallel instead of sequential round-trips. Stop exploring once you have the answer—don't keep digging "just in case."
+
+### Red Flags
+
+| Thought | Reality |
+|---------|---------|
+| "Let me summarize what I just found" | If the user can see the tool output, they don't need it repeated in prose. |
+| "I should acknowledge that's a great question" | Skip it. Answer the question. |
+| "Let me re-read this file to be safe" | If it's unchanged since your last read, you already have it. |
+| "I'll check a few more places just in case" | Stop once the answer is confirmed. |
+
 ## Red Flags
 
 These thoughts mean STOP—you're rationalizing:
